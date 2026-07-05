@@ -138,15 +138,15 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                 ) {
                     Text(
                         text = "DƯƠNG LỊCH ☀️",
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.ExtraBold,
                         color = Color(0xFF0369A1),
                         letterSpacing = 2.sp
                     )
                     // Display Live Time inside the header
                     Text(
                         text = currentTimeString,
-                        fontSize = 16.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.SemiBold,
                         fontFamily = FontFamily.Monospace,
                         color = Color(0xFF0369A1),
@@ -184,7 +184,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                         ) {
                             Text(
                                 text = String.format("%02d", solarDay),
-                                fontSize = 80.sp,
+                                fontSize = 110.sp,
                                 fontWeight = FontWeight.Black,
                                 color = Color(0xFF1E3A8A),
                                 lineHeight = 80.sp
@@ -192,7 +192,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Spacer(modifier = Modifier.height(8.dp))
                             Text(
                                 text = dayOfWeekVietnamese,
-                                fontSize = 26.sp,
+                                fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = Color(0xFF0284C7),
                                 textAlign = TextAlign.Center
@@ -223,14 +223,14 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Text(
                                     text = "THÁNG",
-                                    fontSize = 12.sp,
+                                    fontSize = 25.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color(0xFF0284C7),
                                     letterSpacing = 1.sp
                                 )
                                 Text(
                                     text = solarMonth.toString(),
-                                    fontSize = 32.sp,
+                                    fontSize = 60.sp,
                                     fontWeight = FontWeight.ExtraBold,
                                     color = Color(0xFF1E3A8A)
                                 )
@@ -253,7 +253,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Text(
                                     text = "NĂM",
-                                    fontSize = 12.sp,
+                                    fontSize = 23.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color(0xFF0284C7),
                                     letterSpacing = 1.sp
@@ -305,14 +305,14 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                 ) {
                     Text(
                         text = "ÂM LỊCH 🌙",
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.ExtraBold,
                         color = Color(0xFFBE123C),
                         letterSpacing = 2.sp
                     )
                     Text(
                         text = "HOÀNG ĐẠO",
-                        fontSize = 12.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color(0xFFBE123C),
                         modifier = Modifier
@@ -349,7 +349,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                         ) {
                             Text(
                                 text = String.format("%02d", lunarDay),
-                                fontSize = 80.sp,
+                                fontSize = 110.sp,
                                 fontWeight = FontWeight.Black,
                                 color = Color(0xFF9F1239),
                                 lineHeight = 80.sp
@@ -357,7 +357,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Spacer(modifier = Modifier.height(8.dp))
                             Text(
                                 text = "NGÀY ÂM",
-                                fontSize = 24.sp,
+                                fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = Color(0xFFE11D48),
                                 textAlign = TextAlign.Center
@@ -388,7 +388,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Text(
                                     text = "THÁNG ÂM",
-                                    fontSize = 11.sp,
+                                    fontSize = 18.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color(0xFFE11D48),
                                     letterSpacing = 1.sp
@@ -398,7 +398,7 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                                 ) {
                                     Text(
                                         text = lunarMonth.toString(),
-                                        fontSize = 32.sp,
+                                        fontSize = 60.sp,
                                         fontWeight = FontWeight.ExtraBold,
                                         color = Color(0xFF9F1239)
                                     )
@@ -431,14 +431,14 @@ fun LunarCalendarBentoScreen(calendar: Calendar, modifier: Modifier = Modifier) 
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Text(
                                     text = "NĂM ÂM",
-                                    fontSize = 11.sp,
+                                    fontSize = 18.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color(0xFFE11D48),
                                     letterSpacing = 1.sp
                                 )
                                 Text(
                                     text = lunarYearName,
-                                    fontSize = 18.sp,
+                                    fontSize = 23.sp,
                                     fontWeight = FontWeight.ExtraBold,
                                     color = Color(0xFF9F1239),
                                     textAlign = TextAlign.Center,
