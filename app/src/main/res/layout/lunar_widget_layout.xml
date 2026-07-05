@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/lunar_widget_background"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <!-- Lantern icon box -->
+    <LinearLayout
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/lunar_widget_icon_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏮"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <!-- Content fields -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIDGET HÔM NAY"
+            android:textColor="#BE123C"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/widget_lunar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Âm lịch ngày dd/mm/yyyy"
+            android:textColor="#9F1239"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/widget_lunar_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm Âm Lịch"
+            android:textColor="#E11D48"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+</LinearLayout>
