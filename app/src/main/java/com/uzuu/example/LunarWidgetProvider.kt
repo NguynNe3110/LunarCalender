@@ -56,12 +56,12 @@ class LunarWidgetProvider : AppWidgetProvider() {
             // Bind lunar date text
             views.setTextViewText(
                 R.id.widget_lunar_date,
-                "Âm lịch ngày ${String.format("%02d", lunarDay)}/${String.format("%02d", lunarMonth)}/$lunarYear"
+                "${String.format("%02d", lunarDay)}/${String.format("%02d", lunarMonth)}/$lunarYear"
             )
 
-            // Bind lunar year name
-            val leapSuffix = if (isLeapMonth) " (Tháng Nhuận)" else ""
-            views.setTextViewText(R.id.widget_lunar_year, "Năm $lunarYearName$leapSuffix")
+//            // Bind lunar year name
+//            val leapSuffix = if (isLeapMonth) " (Tháng Nhuận)" else ""
+//            views.setTextViewText(R.id.widget_lunar_year, "Năm $lunarYearName$leapSuffix")
 
             // Setup click pending intent to launch MainActivity
             val launchIntent = Intent(context, MainActivity::class.java).apply {
