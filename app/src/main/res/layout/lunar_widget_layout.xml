@@ -27,15 +27,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Âm lịch ngày"
-            android:textColor="#BE123C"
+            android:textColor="#DB2C58"
             android:textStyle="bold"
-            android:textSize="11sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/widget_lunar_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Âm lịch ngày dd/mm/yyyy"
+            android:text="99/99/9999"
             android:textColor="#9F1239"
             android:textStyle="bold"
             android:textSize="18sp"
